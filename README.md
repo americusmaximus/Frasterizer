@@ -1,5 +1,5 @@
 # Frasterizer
-Frasterizer is a C# Font to Image Rasterizer. With a wide range of options to use. Frasterizer is a library, as well as CLI and GUI interfaces for it.
+Frasterizer is a C# font to image rasterizer library with a wide range of options for user to use. Frasterizer is a library, as well as CLI and GUI interfaces for it.
 
 Frasterizer is a library that runs on .Net Framework 4.0, 4.5, 4.7, 4.8, .Net Core 3.1, as well as .Net 5. Please see Build and Usage sections below for details.
 
@@ -34,13 +34,15 @@ Please see the CLI section of building the code under Windows.
 .Net on Linux depends on `libgdiplus` for font rasterization.
 
 In case you see errors mentioning the following:
+
 > The type initializer for 'Gdip' threw an exception.
 
 or
 
 > Unable to load DLL 'libgdiplus': The specified module could not be found.
 
-you have to install libgdiplus library on your computer. To do that, please use the following command:
+you have to install libgdiplus library on your computer, which you can do by executing the following command:
+
 > sudo apt install libgdiplus
  
 ## Use
