@@ -1,0 +1,6 @@
+.vs
+*.csproj.user
+Bin
+Obj
+bin
+obj
