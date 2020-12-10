@@ -78,11 +78,11 @@ namespace Frasterizer.CLI
                 Console.WriteLine("Usage: Frasterizer.CLI [options|parameters].");
                 Console.WriteLine();
                 Console.WriteLine("Options:");
-                Console.WriteLine(" c=[path]|config=[path]         Rasterize font with specified configuration.");
-                Console.WriteLine(" h|help                         Display help.");
+                Console.WriteLine(" c=[path]|config=[path]           Rasterize font with specified configuration.");
+                Console.WriteLine(" h|help                           Display help.");
                 Console.WriteLine(" h=[parameter]|help=[parameter]   Display help for a specified parameter.");
-                Console.WriteLine(" v|version                      Display version.");
-                Console.WriteLine(" [parameters]                       Rasterize a font with specified parameters.");
+                Console.WriteLine(" v|version                        Display version.");
+                Console.WriteLine(" [parameters]                     Rasterize a font with specified parameters.");
 
                 return 0;
             }
@@ -93,6 +93,7 @@ namespace Frasterizer.CLI
             if (parameters.Any(a => a.ToLowerInvariant() == "v") || parameters.Any(a => a.ToLowerInvariant() == "version"))
             {
                 Console.WriteLine(string.Format("Version {0}", Assembly.GetExecutingAssembly().GetName().Version.ToString()));
+				
                 return 0;
             }
 
@@ -106,7 +107,6 @@ namespace Frasterizer.CLI
                     Console.Write(x.Key.PadRight(20));
                     Console.WriteLine(x.Value);
                     Console.WriteLine();
-
                 }
 
                 return 0;
@@ -148,19 +148,35 @@ namespace Frasterizer.CLI
                 {
                     var files = string.Join("\n", ars);
 
-                    Console.WriteLine("There can be only one configuration file specified. Found <{0}> files:\n{1}", ars.Length, files);
+                    Console.WriteLine(string.Format("There can be only one configuration file specified. Found <{0}> files:\n{1}", ars.Length, files));
 
                     return -1;
                 }
 
                 try
                 {
-                    var json = File.ReadAllText(ars[0], Encoding.UTF8);
+                    if (string.IsNullOrWhiteSpace(ars[0]))
+                    {
+                        Console.WriteLine("Configuration file path cannot be empty.");
+
+                        return -1;
+                    }
+
+                    var normalizedPath = NormalizeFileName(ars[0]);
+
+                    if (!File.Exists(normalizedPath))
+                    {
+                        Console.WriteLine(string.Format("Configuration file <0> not found.", normalizedPath));
+
+                        return -1;
+                    }
+
+                    var json = File.ReadAllText(normalizedPath, Encoding.UTF8);
                     config = JsonConvert.DeserializeObject<RasterizerSettings>(json);
 
                     if (config == default)
                     {
-                        Console.WriteLine(string.Format("Unable to deserialize the content of the configuration file <{0}>. Unknown reason.", ars[0]));
+                        Console.WriteLine(string.Format("Unable to deserialize the content of the configuration file <{0}>. Unknown reason.", normalizedPath));
 
                         return -1;
                     }
@@ -215,7 +231,7 @@ namespace Frasterizer.CLI
 
                 if (pms.Length != 1)
                 {
-                    Console.WriteLine("There can be only one parameter <{0}>", key);
+                    Console.WriteLine(string.Format("There can be only one parameter <{0}>", key));
 
                     return -1;
                 }
@@ -782,7 +798,7 @@ namespace Frasterizer.CLI
             return string.IsNullOrWhiteSpace(Path.GetDirectoryName(fileName)) ? Path.Combine(Environment.CurrentDirectory, fileName) : fileName;
         }
 
-        static string GetHelpString(string parameter)
+        public static string GetHelpString(string parameter)
         {
             if (string.IsNullOrWhiteSpace(parameter)) { return "No help available for <blank> parameter."; }
 
@@ -797,7 +813,7 @@ namespace Frasterizer.CLI
             return string.Format("No help available for <{0}> parameter.", parameter);
         }
 
-        static bool TryParseColor(string value, out Color color)
+        public static bool TryParseColor(string value, out Color color)
         {
             if (value.StartsWith("#"))
             {
@@ -826,7 +842,7 @@ namespace Frasterizer.CLI
             return property != default;
         }
 
-        private static bool TryParseMargin(string value, out Spacing spacing)
+        public static bool TryParseMargin(string value, out Spacing spacing)
         {
             var parts = value.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
 

@@ -1,8 +1,7 @@
 {
   "profiles": {
     "Frasterizer.CLI": {
-      "commandName": "Project",
-      "commandLineArgs": "h"
+      "commandName": "Project"
     }
   }
 }
