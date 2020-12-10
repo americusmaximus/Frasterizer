@@ -65,6 +65,21 @@ namespace Frasterizer.CLI
             { "text",               "A path to a file with the characters to rasterize, or a\n                    string with the characters to do the same.\n                    At least one character is required." }
         };
 
+        public static string GetHelpString(string parameter)
+        {
+            if (string.IsNullOrWhiteSpace(parameter)) { return "No help available for <blank> parameter."; }
+
+            if (parameter == "c") { parameter = "config"; }
+            if (parameter == "t") { parameter = "text"; }
+
+            if (Help.TryGetValue(parameter, out var result))
+            {
+                return result;
+            }
+
+            return string.Format("No help available for <{0}> parameter.", parameter);
+        }
+
         public static int Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
@@ -796,21 +811,6 @@ namespace Frasterizer.CLI
         public static string NormalizeFileName(string fileName)
         {
             return string.IsNullOrWhiteSpace(Path.GetDirectoryName(fileName)) ? Path.Combine(Environment.CurrentDirectory, fileName) : fileName;
-        }
-
-        public static string GetHelpString(string parameter)
-        {
-            if (string.IsNullOrWhiteSpace(parameter)) { return "No help available for <blank> parameter."; }
-
-            if (parameter == "c") { parameter = "config"; }
-            if (parameter == "t") { parameter = "text"; }
-
-            if (Help.TryGetValue(parameter, out var result))
-            {
-                return result;
-            }
-
-            return string.Format("No help available for <{0}> parameter.", parameter);
         }
 
         public static bool TryParseColor(string value, out Color color)
