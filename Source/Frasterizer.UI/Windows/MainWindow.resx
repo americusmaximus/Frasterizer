@@ -263,7 +263,7 @@
     <value>360, 56</value>
   </metadata>
   <data name="ImageSaveFileDialog.Filter" xml:space="preserve">
-    <value>Bit Map (.bmp)|*.bmp|Enhanced Metafile (.emf)|*.emf|Exchangeable Image File (.exif)|*.exif|Graphics Interchanange Format (.gif)|*.gif|Joint Photographic Experts Group (.jpg)|*.jpg|Portable Network Graphics (.png)|*.png|Tagged Image File Format (.tif)|*.tiff|Windows Icon Image (.ico)|*.ico</value>
+    <value>Bit Map|*.bmp|Enhanced Metafile|*.emf|Exchangeable Image File|*.exif|Graphics Interchanange Format|*.gif|Joint Photographic Experts Group|*.jpg;*.jpeg|Portable Network Graphics|*.png|Tagged Image File Format|*.tiff|Windows Icon Image|*.ico</value>
   </data>
   <metadata name="ImageDescriptionSaveFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>525, 56</value>
