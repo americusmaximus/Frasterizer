@@ -145,7 +145,7 @@ A path to a file with the characters to rasterize, or a string with the characte
 
 #### Example
 The following command line produces an image shown below.
->Frasterizer.CLI.exe text="qwertyuiop1234567890QWERTYUIOP" fonts="C:\Windows\Fonts\consola.ttf" isemptyallowed=true padding=1 margin=2 ispoweroftwo=true backcolor=transparent color=white output.image=1.png sizetype=pt outline=blue,1 size=36
+>Frasterizer.CLI.exe text="qwertyuiop1234567890QWERTYUIOP" fonts="C:\Windows\Fonts\consola.ttf" isemptyallowed=true padding=1 margin=2 ispoweroftwo=true backcolor=transparent color=white output.image=example.png sizetype=pt outline=blue,1 size=36
 
 ![Complex example of rasterization with Frasterizer](https://github.com/americusmaximus/Frasterizer/blob/main/Docs/Consolas_36_Point_Regular.png)
 

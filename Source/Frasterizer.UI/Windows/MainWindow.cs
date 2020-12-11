@@ -1646,7 +1646,7 @@ namespace Frasterizer.UI.Windows
             if (ImageSaveFileDialog.ShowDialog(this) == DialogResult.OK)
             {
                 var extension = Path.GetExtension(ImageSaveFileDialog.FileName).ToLowerInvariant()
-                                        .Replace(".", string.Empty).Replace("ico", "icon").Replace("jpg", "jpeg");
+                                        .Replace(".", string.Empty).Replace("ico", "icon").Replace("jpg", "jpeg").Replace("tif", "tiff"); ;
 
                 var imageFormatProperty = typeof(ImageFormat).GetProperties(BindingFlags.Public | BindingFlags.Static | BindingFlags.GetProperty)
                                                                 .FirstOrDefault(p => p.Name.ToLowerInvariant() == extension);

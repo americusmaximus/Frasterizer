@@ -746,7 +746,7 @@ namespace Frasterizer.CLI
                 var result = Rasterizer.Rasterize(config, characters);
 
                 // Save Image
-                var extension = Path.GetExtension(imageFileName).ToLowerInvariant().Replace(".", string.Empty).Replace("ico", "icon").Replace("jpg", "jpeg");
+                var extension = Path.GetExtension(imageFileName).ToLowerInvariant().Replace(".", string.Empty).Replace("ico", "icon").Replace("jpg", "jpeg").Replace("tif", "tiff");
 
                 var imageFormatProperty = typeof(ImageFormat).GetProperties(BindingFlags.Public | BindingFlags.Static | BindingFlags.GetProperty)
                                                                 .FirstOrDefault(p => p.Name.ToLowerInvariant() == extension);
