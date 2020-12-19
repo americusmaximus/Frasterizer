@@ -639,6 +639,14 @@ namespace Frasterizer.UI.Windows
             ImagePreviewZoomValue = 100;
             ImagePreviewZoomToolStripDropDownButton.Text = ImagePreviewZoom100ToolStripMenuItem.Text;
 
+            ImagePreviewZoom50ToolStripMenuItem.Checked = false;
+            ImagePreviewZoom100ToolStripMenuItem.Checked = true;
+            ImagePreviewZoom150ToolStripMenuItem.Checked = false;
+            ImagePreviewZoom200ToolStripMenuItem.Checked = false;
+            ImagePreviewZoom300ToolStripMenuItem.Checked = false;
+            ImagePreviewZoom400ToolStripMenuItem.Checked = false;
+            ImagePreviewZoom500ToolStripMenuItem.Checked = false;
+
             ImagePreviewZoomValueChanged(sender, e);
         }
 
@@ -646,6 +654,14 @@ namespace Frasterizer.UI.Windows
         {
             ImagePreviewZoomValue = 150;
             ImagePreviewZoomToolStripDropDownButton.Text = ImagePreviewZoom150ToolStripMenuItem.Text;
+
+            ImagePreviewZoom50ToolStripMenuItem.Checked = false;
+            ImagePreviewZoom100ToolStripMenuItem.Checked = false;
+            ImagePreviewZoom150ToolStripMenuItem.Checked = true;
+            ImagePreviewZoom200ToolStripMenuItem.Checked = false;
+            ImagePreviewZoom300ToolStripMenuItem.Checked = false;
+            ImagePreviewZoom400ToolStripMenuItem.Checked = false;
+            ImagePreviewZoom500ToolStripMenuItem.Checked = false;
 
             ImagePreviewZoomValueChanged(sender, e);
         }
@@ -655,6 +671,14 @@ namespace Frasterizer.UI.Windows
             ImagePreviewZoomValue = 200;
             ImagePreviewZoomToolStripDropDownButton.Text = ImagePreviewZoom200ToolStripMenuItem.Text;
 
+            ImagePreviewZoom50ToolStripMenuItem.Checked = false;
+            ImagePreviewZoom100ToolStripMenuItem.Checked = false;
+            ImagePreviewZoom150ToolStripMenuItem.Checked = false;
+            ImagePreviewZoom200ToolStripMenuItem.Checked = true;
+            ImagePreviewZoom300ToolStripMenuItem.Checked = false;
+            ImagePreviewZoom400ToolStripMenuItem.Checked = false;
+            ImagePreviewZoom500ToolStripMenuItem.Checked = false;
+
             ImagePreviewZoomValueChanged(sender, e);
         }
 
@@ -662,6 +686,14 @@ namespace Frasterizer.UI.Windows
         {
             ImagePreviewZoomValue = 300;
             ImagePreviewZoomToolStripDropDownButton.Text = ImagePreviewZoom300ToolStripMenuItem.Text;
+
+            ImagePreviewZoom50ToolStripMenuItem.Checked = false;
+            ImagePreviewZoom100ToolStripMenuItem.Checked = false;
+            ImagePreviewZoom150ToolStripMenuItem.Checked = false;
+            ImagePreviewZoom200ToolStripMenuItem.Checked = false;
+            ImagePreviewZoom300ToolStripMenuItem.Checked = true;
+            ImagePreviewZoom400ToolStripMenuItem.Checked = false;
+            ImagePreviewZoom500ToolStripMenuItem.Checked = false;
 
             ImagePreviewZoomValueChanged(sender, e);
         }
@@ -671,6 +703,14 @@ namespace Frasterizer.UI.Windows
             ImagePreviewZoomValue = 400;
             ImagePreviewZoomToolStripDropDownButton.Text = ImagePreviewZoom400ToolStripMenuItem.Text;
 
+            ImagePreviewZoom50ToolStripMenuItem.Checked = false;
+            ImagePreviewZoom100ToolStripMenuItem.Checked = false;
+            ImagePreviewZoom150ToolStripMenuItem.Checked = false;
+            ImagePreviewZoom200ToolStripMenuItem.Checked = false;
+            ImagePreviewZoom300ToolStripMenuItem.Checked = false;
+            ImagePreviewZoom400ToolStripMenuItem.Checked = true;
+            ImagePreviewZoom500ToolStripMenuItem.Checked = false;
+
             ImagePreviewZoomValueChanged(sender, e);
         }
 
@@ -679,6 +719,14 @@ namespace Frasterizer.UI.Windows
             ImagePreviewZoomValue = 500;
             ImagePreviewZoomToolStripDropDownButton.Text = ImagePreviewZoom500ToolStripMenuItem.Text;
 
+            ImagePreviewZoom50ToolStripMenuItem.Checked = false;
+            ImagePreviewZoom100ToolStripMenuItem.Checked = false;
+            ImagePreviewZoom150ToolStripMenuItem.Checked = false;
+            ImagePreviewZoom200ToolStripMenuItem.Checked = false;
+            ImagePreviewZoom300ToolStripMenuItem.Checked = false;
+            ImagePreviewZoom400ToolStripMenuItem.Checked = false;
+            ImagePreviewZoom500ToolStripMenuItem.Checked = true;
+
             ImagePreviewZoomValueChanged(sender, e);
         }
 
@@ -686,6 +734,14 @@ namespace Frasterizer.UI.Windows
         {
             ImagePreviewZoomValue = 50;
             ImagePreviewZoomToolStripDropDownButton.Text = ImagePreviewZoom50ToolStripMenuItem.Text;
+
+            ImagePreviewZoom50ToolStripMenuItem.Checked = true;
+            ImagePreviewZoom100ToolStripMenuItem.Checked = false;
+            ImagePreviewZoom150ToolStripMenuItem.Checked = false;
+            ImagePreviewZoom200ToolStripMenuItem.Checked = false;
+            ImagePreviewZoom300ToolStripMenuItem.Checked = false;
+            ImagePreviewZoom400ToolStripMenuItem.Checked = false;
+            ImagePreviewZoom500ToolStripMenuItem.Checked = false;
 
             ImagePreviewZoomValueChanged(sender, e);
         }
