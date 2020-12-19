@@ -1181,7 +1181,6 @@
             this.ImagePreviewTabPage.ImageIndex = 0;
             this.ImagePreviewTabPage.Location = new System.Drawing.Point(4, 23);
             this.ImagePreviewTabPage.Name = "ImagePreviewTabPage";
-            this.ImagePreviewTabPage.Padding = new System.Windows.Forms.Padding(3);
             this.ImagePreviewTabPage.Size = new System.Drawing.Size(892, 616);
             this.ImagePreviewTabPage.TabIndex = 0;
             this.ImagePreviewTabPage.Text = "Preview";
@@ -1195,19 +1194,19 @@
             this.ImagePreviewPanel.Controls.Add(this.ImagePreviewPanelVerticalScrollBar);
             this.ImagePreviewPanel.Controls.Add(this.ImagePreviewPictureBox);
             this.ImagePreviewPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ImagePreviewPanel.Location = new System.Drawing.Point(3, 28);
+            this.ImagePreviewPanel.Location = new System.Drawing.Point(0, 25);
             this.ImagePreviewPanel.Margin = new System.Windows.Forms.Padding(0);
             this.ImagePreviewPanel.Name = "ImagePreviewPanel";
-            this.ImagePreviewPanel.Size = new System.Drawing.Size(886, 585);
+            this.ImagePreviewPanel.Size = new System.Drawing.Size(892, 591);
             this.ImagePreviewPanel.TabIndex = 1;
             this.ImagePreviewPanel.Resize += new System.EventHandler(this.ImagePreviewPanelResize);
             // 
             // ImagePreviewPanelHorizontalScrollBar
             // 
             this.ImagePreviewPanelHorizontalScrollBar.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.ImagePreviewPanelHorizontalScrollBar.Location = new System.Drawing.Point(0, 566);
+            this.ImagePreviewPanelHorizontalScrollBar.Location = new System.Drawing.Point(0, 572);
             this.ImagePreviewPanelHorizontalScrollBar.Name = "ImagePreviewPanelHorizontalScrollBar";
-            this.ImagePreviewPanelHorizontalScrollBar.Size = new System.Drawing.Size(867, 17);
+            this.ImagePreviewPanelHorizontalScrollBar.Size = new System.Drawing.Size(873, 17);
             this.ImagePreviewPanelHorizontalScrollBar.TabIndex = 2;
             this.ImagePreviewPanelHorizontalScrollBar.Visible = false;
             this.ImagePreviewPanelHorizontalScrollBar.Scroll += new System.Windows.Forms.ScrollEventHandler(this.ImagePreviewPanelHorizontalScrollBarScroll);
@@ -1215,9 +1214,9 @@
             // ImagePreviewPanelVerticalScrollBar
             // 
             this.ImagePreviewPanelVerticalScrollBar.Dock = System.Windows.Forms.DockStyle.Right;
-            this.ImagePreviewPanelVerticalScrollBar.Location = new System.Drawing.Point(867, 0);
+            this.ImagePreviewPanelVerticalScrollBar.Location = new System.Drawing.Point(873, 0);
             this.ImagePreviewPanelVerticalScrollBar.Name = "ImagePreviewPanelVerticalScrollBar";
-            this.ImagePreviewPanelVerticalScrollBar.Size = new System.Drawing.Size(17, 583);
+            this.ImagePreviewPanelVerticalScrollBar.Size = new System.Drawing.Size(17, 589);
             this.ImagePreviewPanelVerticalScrollBar.TabIndex = 1;
             this.ImagePreviewPanelVerticalScrollBar.Visible = false;
             this.ImagePreviewPanelVerticalScrollBar.Scroll += new System.Windows.Forms.ScrollEventHandler(this.ImagePreviewPanelVerticalScrollBarScroll);
@@ -1243,9 +1242,9 @@
             this.ImagePreviewSaveToolStripButton,
             this.ImagePreviewLeftToolStripSeparator,
             this.ImagePreviewSaveDescriptionToolStripButton});
-            this.ImagePreviewToolStrip.Location = new System.Drawing.Point(3, 3);
+            this.ImagePreviewToolStrip.Location = new System.Drawing.Point(0, 0);
             this.ImagePreviewToolStrip.Name = "ImagePreviewToolStrip";
-            this.ImagePreviewToolStrip.Size = new System.Drawing.Size(886, 25);
+            this.ImagePreviewToolStrip.Size = new System.Drawing.Size(892, 25);
             this.ImagePreviewToolStrip.TabIndex = 20;
             // 
             // ImagePreviewDrawGridToolStripButton
@@ -1373,7 +1372,6 @@
             this.ImageTestTabPage.ImageIndex = 1;
             this.ImageTestTabPage.Location = new System.Drawing.Point(4, 23);
             this.ImageTestTabPage.Name = "ImageTestTabPage";
-            this.ImageTestTabPage.Padding = new System.Windows.Forms.Padding(3);
             this.ImageTestTabPage.Size = new System.Drawing.Size(892, 616);
             this.ImageTestTabPage.TabIndex = 1;
             this.ImageTestTabPage.Text = "Test";
@@ -1382,7 +1380,7 @@
             // ImageTestSplitContainer
             // 
             this.ImageTestSplitContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ImageTestSplitContainer.Location = new System.Drawing.Point(3, 3);
+            this.ImageTestSplitContainer.Location = new System.Drawing.Point(0, 0);
             this.ImageTestSplitContainer.Name = "ImageTestSplitContainer";
             this.ImageTestSplitContainer.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -1395,8 +1393,8 @@
             // 
             this.ImageTestSplitContainer.Panel2.Controls.Add(this.ImageTestTextGroupBox);
             this.ImageTestSplitContainer.Panel2.Controls.Add(this.ImageTestAlignmentGroupBox);
-            this.ImageTestSplitContainer.Size = new System.Drawing.Size(886, 610);
-            this.ImageTestSplitContainer.SplitterDistance = 474;
+            this.ImageTestSplitContainer.Size = new System.Drawing.Size(892, 616);
+            this.ImageTestSplitContainer.SplitterDistance = 478;
             this.ImageTestSplitContainer.TabIndex = 0;
             // 
             // ImageTestPanel
@@ -1410,16 +1408,16 @@
             this.ImageTestPanel.Location = new System.Drawing.Point(0, 0);
             this.ImageTestPanel.Margin = new System.Windows.Forms.Padding(0);
             this.ImageTestPanel.Name = "ImageTestPanel";
-            this.ImageTestPanel.Size = new System.Drawing.Size(886, 474);
+            this.ImageTestPanel.Size = new System.Drawing.Size(892, 478);
             this.ImageTestPanel.TabIndex = 0;
             this.ImageTestPanel.Resize += new System.EventHandler(this.ImageTestPanelResize);
             // 
             // ImageTestPanelHorizontalScrollBar
             // 
             this.ImageTestPanelHorizontalScrollBar.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.ImageTestPanelHorizontalScrollBar.Location = new System.Drawing.Point(0, 455);
+            this.ImageTestPanelHorizontalScrollBar.Location = new System.Drawing.Point(0, 459);
             this.ImageTestPanelHorizontalScrollBar.Name = "ImageTestPanelHorizontalScrollBar";
-            this.ImageTestPanelHorizontalScrollBar.Size = new System.Drawing.Size(867, 17);
+            this.ImageTestPanelHorizontalScrollBar.Size = new System.Drawing.Size(873, 17);
             this.ImageTestPanelHorizontalScrollBar.TabIndex = 2;
             this.ImageTestPanelHorizontalScrollBar.Visible = false;
             this.ImageTestPanelHorizontalScrollBar.Scroll += new System.Windows.Forms.ScrollEventHandler(this.ImageTestPanelHorizontalScrollBarScroll);
@@ -1427,9 +1425,9 @@
             // ImageTestPanelVerticalScrollBar
             // 
             this.ImageTestPanelVerticalScrollBar.Dock = System.Windows.Forms.DockStyle.Right;
-            this.ImageTestPanelVerticalScrollBar.Location = new System.Drawing.Point(867, 0);
+            this.ImageTestPanelVerticalScrollBar.Location = new System.Drawing.Point(873, 0);
             this.ImageTestPanelVerticalScrollBar.Name = "ImageTestPanelVerticalScrollBar";
-            this.ImageTestPanelVerticalScrollBar.Size = new System.Drawing.Size(17, 472);
+            this.ImageTestPanelVerticalScrollBar.Size = new System.Drawing.Size(17, 476);
             this.ImageTestPanelVerticalScrollBar.TabIndex = 1;
             this.ImageTestPanelVerticalScrollBar.Visible = false;
             this.ImageTestPanelVerticalScrollBar.Scroll += new System.Windows.Forms.ScrollEventHandler(this.ImageTestPanelVerticalScrollBarScroll);
@@ -1449,7 +1447,7 @@
             this.ImageTestTextGroupBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ImageTestTextGroupBox.Location = new System.Drawing.Point(75, 0);
             this.ImageTestTextGroupBox.Name = "ImageTestTextGroupBox";
-            this.ImageTestTextGroupBox.Size = new System.Drawing.Size(811, 132);
+            this.ImageTestTextGroupBox.Size = new System.Drawing.Size(817, 134);
             this.ImageTestTextGroupBox.TabIndex = 2;
             this.ImageTestTextGroupBox.TabStop = false;
             this.ImageTestTextGroupBox.Text = "Text";
@@ -1463,7 +1461,7 @@
             this.ImageTestTextBox.Multiline = true;
             this.ImageTestTextBox.Name = "ImageTestTextBox";
             this.ImageTestTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.ImageTestTextBox.Size = new System.Drawing.Size(805, 113);
+            this.ImageTestTextBox.Size = new System.Drawing.Size(811, 115);
             this.ImageTestTextBox.TabIndex = 1;
             this.ImageTestTextBox.WordWrap = false;
             this.ImageTestTextBox.TextChanged += new System.EventHandler(this.ImageTestTextBoxTextChanged);
@@ -1476,7 +1474,7 @@
             this.ImageTestAlignmentGroupBox.Dock = System.Windows.Forms.DockStyle.Left;
             this.ImageTestAlignmentGroupBox.Location = new System.Drawing.Point(0, 0);
             this.ImageTestAlignmentGroupBox.Name = "ImageTestAlignmentGroupBox";
-            this.ImageTestAlignmentGroupBox.Size = new System.Drawing.Size(75, 132);
+            this.ImageTestAlignmentGroupBox.Size = new System.Drawing.Size(75, 134);
             this.ImageTestAlignmentGroupBox.TabIndex = 0;
             this.ImageTestAlignmentGroupBox.TabStop = false;
             this.ImageTestAlignmentGroupBox.Text = "Alignment";
