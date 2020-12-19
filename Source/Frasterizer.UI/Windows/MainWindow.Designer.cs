@@ -301,7 +301,7 @@
             // 
             this.VisitWebsiteToolStripMenuItem.Image = global::Frasterizer.UI.Properties.Resources.Web_16x;
             this.VisitWebsiteToolStripMenuItem.Name = "VisitWebsiteToolStripMenuItem";
-            this.VisitWebsiteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.VisitWebsiteToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.VisitWebsiteToolStripMenuItem.Text = "Visit &Website";
             this.VisitWebsiteToolStripMenuItem.Click += new System.EventHandler(this.VisitWebsiteToolStripMenuItemClick);
             // 
@@ -309,20 +309,20 @@
             // 
             this.ReportAnIssueToolStripMenuItem.Image = global::Frasterizer.UI.Properties.Resources.Bug_16x;
             this.ReportAnIssueToolStripMenuItem.Name = "ReportAnIssueToolStripMenuItem";
-            this.ReportAnIssueToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ReportAnIssueToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.ReportAnIssueToolStripMenuItem.Text = "Report an &Issue";
             this.ReportAnIssueToolStripMenuItem.Click += new System.EventHandler(this.ReportAnIssueToolStripMenuItemClick);
             // 
             // HelpToolStripSeparator
             // 
             this.HelpToolStripSeparator.Name = "HelpToolStripSeparator";
-            this.HelpToolStripSeparator.Size = new System.Drawing.Size(177, 6);
+            this.HelpToolStripSeparator.Size = new System.Drawing.Size(151, 6);
             // 
             // AboutToolStripMenuItem
             // 
             this.AboutToolStripMenuItem.Image = global::Frasterizer.UI.Properties.Resources.Favorite_16x;
             this.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem";
-            this.AboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.AboutToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.AboutToolStripMenuItem.Text = "&About";
             this.AboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItemClick);
             // 
@@ -1287,7 +1287,7 @@
             // ImagePreviewZoom50ToolStripMenuItem
             // 
             this.ImagePreviewZoom50ToolStripMenuItem.Name = "ImagePreviewZoom50ToolStripMenuItem";
-            this.ImagePreviewZoom50ToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
+            this.ImagePreviewZoom50ToolStripMenuItem.Size = new System.Drawing.Size(102, 22);
             this.ImagePreviewZoom50ToolStripMenuItem.Text = "50%";
             this.ImagePreviewZoom50ToolStripMenuItem.Click += new System.EventHandler(this.ImagePreviewZoom50ToolStripMenuItemClick);
             // 
@@ -1296,42 +1296,42 @@
             this.ImagePreviewZoom100ToolStripMenuItem.Checked = true;
             this.ImagePreviewZoom100ToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.ImagePreviewZoom100ToolStripMenuItem.Name = "ImagePreviewZoom100ToolStripMenuItem";
-            this.ImagePreviewZoom100ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ImagePreviewZoom100ToolStripMenuItem.Size = new System.Drawing.Size(102, 22);
             this.ImagePreviewZoom100ToolStripMenuItem.Text = "100%";
             this.ImagePreviewZoom100ToolStripMenuItem.Click += new System.EventHandler(this.ImagePreviewZoom100ToolStripMenuItemClick);
             // 
             // ImagePreviewZoom150ToolStripMenuItem
             // 
             this.ImagePreviewZoom150ToolStripMenuItem.Name = "ImagePreviewZoom150ToolStripMenuItem";
-            this.ImagePreviewZoom150ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ImagePreviewZoom150ToolStripMenuItem.Size = new System.Drawing.Size(102, 22);
             this.ImagePreviewZoom150ToolStripMenuItem.Text = "150%";
             this.ImagePreviewZoom150ToolStripMenuItem.Click += new System.EventHandler(this.ImagePreviewZoom150ToolStripMenuItemClick);
             // 
             // ImagePreviewZoom200ToolStripMenuItem
             // 
             this.ImagePreviewZoom200ToolStripMenuItem.Name = "ImagePreviewZoom200ToolStripMenuItem";
-            this.ImagePreviewZoom200ToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
+            this.ImagePreviewZoom200ToolStripMenuItem.Size = new System.Drawing.Size(102, 22);
             this.ImagePreviewZoom200ToolStripMenuItem.Text = "200%";
             this.ImagePreviewZoom200ToolStripMenuItem.Click += new System.EventHandler(this.ImagePreviewZoom200ToolStripMenuItemClick);
             // 
             // ImagePreviewZoom300ToolStripMenuItem
             // 
             this.ImagePreviewZoom300ToolStripMenuItem.Name = "ImagePreviewZoom300ToolStripMenuItem";
-            this.ImagePreviewZoom300ToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
+            this.ImagePreviewZoom300ToolStripMenuItem.Size = new System.Drawing.Size(102, 22);
             this.ImagePreviewZoom300ToolStripMenuItem.Text = "300%";
             this.ImagePreviewZoom300ToolStripMenuItem.Click += new System.EventHandler(this.ImagePreviewZoom300ToolStripMenuItemClick);
             // 
             // ImagePreviewZoom400ToolStripMenuItem
             // 
             this.ImagePreviewZoom400ToolStripMenuItem.Name = "ImagePreviewZoom400ToolStripMenuItem";
-            this.ImagePreviewZoom400ToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
+            this.ImagePreviewZoom400ToolStripMenuItem.Size = new System.Drawing.Size(102, 22);
             this.ImagePreviewZoom400ToolStripMenuItem.Text = "400%";
             this.ImagePreviewZoom400ToolStripMenuItem.Click += new System.EventHandler(this.ImagePreviewZoom400ToolStripMenuItemClick);
             // 
             // ImagePreviewZoom500ToolStripMenuItem
             // 
             this.ImagePreviewZoom500ToolStripMenuItem.Name = "ImagePreviewZoom500ToolStripMenuItem";
-            this.ImagePreviewZoom500ToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
+            this.ImagePreviewZoom500ToolStripMenuItem.Size = new System.Drawing.Size(102, 22);
             this.ImagePreviewZoom500ToolStripMenuItem.Text = "500%";
             this.ImagePreviewZoom500ToolStripMenuItem.Click += new System.EventHandler(this.ImagePreviewZoom500ToolStripMenuItemClick);
             // 
@@ -1374,7 +1374,7 @@
             this.ImageTestTabPage.Location = new System.Drawing.Point(4, 23);
             this.ImageTestTabPage.Name = "ImageTestTabPage";
             this.ImageTestTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.ImageTestTabPage.Size = new System.Drawing.Size(904, 616);
+            this.ImageTestTabPage.Size = new System.Drawing.Size(892, 616);
             this.ImageTestTabPage.TabIndex = 1;
             this.ImageTestTabPage.Text = "Test";
             this.ImageTestTabPage.UseVisualStyleBackColor = true;
@@ -1395,7 +1395,7 @@
             // 
             this.ImageTestSplitContainer.Panel2.Controls.Add(this.ImageTestTextGroupBox);
             this.ImageTestSplitContainer.Panel2.Controls.Add(this.ImageTestAlignmentGroupBox);
-            this.ImageTestSplitContainer.Size = new System.Drawing.Size(898, 610);
+            this.ImageTestSplitContainer.Size = new System.Drawing.Size(886, 610);
             this.ImageTestSplitContainer.SplitterDistance = 474;
             this.ImageTestSplitContainer.TabIndex = 0;
             // 
@@ -1410,7 +1410,7 @@
             this.ImageTestPanel.Location = new System.Drawing.Point(0, 0);
             this.ImageTestPanel.Margin = new System.Windows.Forms.Padding(0);
             this.ImageTestPanel.Name = "ImageTestPanel";
-            this.ImageTestPanel.Size = new System.Drawing.Size(898, 474);
+            this.ImageTestPanel.Size = new System.Drawing.Size(886, 474);
             this.ImageTestPanel.TabIndex = 0;
             this.ImageTestPanel.Resize += new System.EventHandler(this.ImageTestPanelResize);
             // 
@@ -1419,7 +1419,7 @@
             this.ImageTestPanelHorizontalScrollBar.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.ImageTestPanelHorizontalScrollBar.Location = new System.Drawing.Point(0, 455);
             this.ImageTestPanelHorizontalScrollBar.Name = "ImageTestPanelHorizontalScrollBar";
-            this.ImageTestPanelHorizontalScrollBar.Size = new System.Drawing.Size(879, 17);
+            this.ImageTestPanelHorizontalScrollBar.Size = new System.Drawing.Size(867, 17);
             this.ImageTestPanelHorizontalScrollBar.TabIndex = 2;
             this.ImageTestPanelHorizontalScrollBar.Visible = false;
             this.ImageTestPanelHorizontalScrollBar.Scroll += new System.Windows.Forms.ScrollEventHandler(this.ImageTestPanelHorizontalScrollBarScroll);
@@ -1427,7 +1427,7 @@
             // ImageTestPanelVerticalScrollBar
             // 
             this.ImageTestPanelVerticalScrollBar.Dock = System.Windows.Forms.DockStyle.Right;
-            this.ImageTestPanelVerticalScrollBar.Location = new System.Drawing.Point(879, 0);
+            this.ImageTestPanelVerticalScrollBar.Location = new System.Drawing.Point(867, 0);
             this.ImageTestPanelVerticalScrollBar.Name = "ImageTestPanelVerticalScrollBar";
             this.ImageTestPanelVerticalScrollBar.Size = new System.Drawing.Size(17, 472);
             this.ImageTestPanelVerticalScrollBar.TabIndex = 1;
@@ -1449,7 +1449,7 @@
             this.ImageTestTextGroupBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ImageTestTextGroupBox.Location = new System.Drawing.Point(75, 0);
             this.ImageTestTextGroupBox.Name = "ImageTestTextGroupBox";
-            this.ImageTestTextGroupBox.Size = new System.Drawing.Size(823, 132);
+            this.ImageTestTextGroupBox.Size = new System.Drawing.Size(811, 132);
             this.ImageTestTextGroupBox.TabIndex = 2;
             this.ImageTestTextGroupBox.TabStop = false;
             this.ImageTestTextGroupBox.Text = "Text";
@@ -1463,7 +1463,7 @@
             this.ImageTestTextBox.Multiline = true;
             this.ImageTestTextBox.Name = "ImageTestTextBox";
             this.ImageTestTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.ImageTestTextBox.Size = new System.Drawing.Size(817, 113);
+            this.ImageTestTextBox.Size = new System.Drawing.Size(805, 113);
             this.ImageTestTextBox.TabIndex = 1;
             this.ImageTestTextBox.WordWrap = false;
             this.ImageTestTextBox.TextChanged += new System.EventHandler(this.ImageTestTextBoxTextChanged);
@@ -1526,11 +1526,11 @@
             // 
             // OpenTextFileDialog
             // 
-            this.OpenTextFileDialog.Filter = "Text (*.txt)|*.txt|All (*.*)|*.*";
+            this.OpenTextFileDialog.Filter = "Text|*.txt|All|*.*";
             // 
             // SaveTextFileDialog
             // 
-            this.SaveTextFileDialog.Filter = "Text (*.txt)|*.txt|All (*.*)|*.*";
+            this.SaveTextFileDialog.Filter = "Text|*.txt|All|*.*";
             // 
             // MainColorDialog
             // 
@@ -1544,15 +1544,15 @@
             // 
             // ImageDescriptionSaveFileDialog
             // 
-            this.ImageDescriptionSaveFileDialog.Filter = "JavaScript Object Notation (.json)|*.json|Text (.txt)|*.txt|All (.*)|*.*";
+            this.ImageDescriptionSaveFileDialog.Filter = "JavaScript Object Notation|*.json|Text|*.txt|All (.*)|*.*";
             // 
             // ConfigurationOpenFileDialog
             // 
-            this.ConfigurationOpenFileDialog.Filter = "JavaScript Object Notation (.json)|*.json|Text (*.txt)|*.txt|All|*.*";
+            this.ConfigurationOpenFileDialog.Filter = "JavaScript Object Notation|*.json|Text|*.txt|All|*.*";
             // 
             // ConfigurationSaveFileDialog
             // 
-            this.ConfigurationSaveFileDialog.Filter = "JavaScript Object Notation (.json)|*.json|Text (*.txt)|*.txt|All|*.*";
+            this.ConfigurationSaveFileDialog.Filter = "JavaScript Object Notation|*.json|Text|*.txt|All|*.*";
             // 
             // MainWindow
             // 
