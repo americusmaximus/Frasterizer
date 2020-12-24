@@ -781,7 +781,7 @@ namespace Frasterizer.CLI
                 // Save description
                 try
                 {
-                    File.WriteAllText(imageDescritionFileName, JsonConvert.SerializeObject(result.Items.Select(i => new { Item = i.Item, Bounds = i.Bounds }).ToArray()), Encoding.UTF8);
+                    File.WriteAllText(imageDescritionFileName, JsonConvert.SerializeObject(result.Items.Select(i => new { Item = i.Item, Bounds = i.Bounds }).ToArray(), Formatting.Indented), Encoding.UTF8);
                     Console.WriteLine(string.Format("Image description saved as <{0}>.", imageDescritionFileName));
                 }
                 catch (Exception iex)
@@ -796,7 +796,7 @@ namespace Frasterizer.CLI
             {
                 Console.WriteLine("Unable to rasterize. Please see details below.");
                 Console.WriteLine("Configuration:");
-                Console.WriteLine(JsonConvert.SerializeObject(config));
+                Console.WriteLine(JsonConvert.SerializeObject(config, Formatting.Indented));
                 Console.WriteLine("Characters:");
                 Console.WriteLine(string.Join(string.Empty, characters));
                 Console.WriteLine("--------------------");

@@ -374,7 +374,7 @@ namespace Frasterizer.UI.Windows
                         }
                     });
 
-                var output = JsonConvert.SerializeObject(settings);
+                var output = JsonConvert.SerializeObject(settings, Formatting.Indented);
 
                 try
                 {
@@ -1739,7 +1739,7 @@ namespace Frasterizer.UI.Windows
             {
                 var items = data.Items.Select(i => new { Item = i.Item, Bounds = i.Bounds }).ToArray();
 
-                var output = JsonConvert.SerializeObject(items);
+                var output = JsonConvert.SerializeObject(items, Formatting.Indented);
 
                 try
                 {
