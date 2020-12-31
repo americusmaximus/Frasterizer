@@ -1698,7 +1698,6 @@ namespace Frasterizer.UI.Windows
 
             ImageSaveFileDialog.FileName = GetFileNameTemplate();
 
-
             if (ImageSaveFileDialog.ShowDialog(this) == DialogResult.OK)
             {
                 var extension = Path.GetExtension(ImageSaveFileDialog.FileName).ToLowerInvariant()
@@ -1706,12 +1705,13 @@ namespace Frasterizer.UI.Windows
 
                 var imageFormatProperty = typeof(ImageFormat).GetProperties(BindingFlags.Public | BindingFlags.Static | BindingFlags.GetProperty)
                                                                 .FirstOrDefault(p => p.Name.ToLowerInvariant() == extension);
+                
                 if (imageFormatProperty == default)
                 {
-                    MessageBox.Show(this, string.Format("Unable to save the image in {0} format.", extension.ToUpperInvariant()), Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(this, string.Format("Unable to save the image in {0} format. Save as BMP.", extension.ToUpperInvariant()), Text, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
-                var imageFormat = (ImageFormat)imageFormatProperty.GetValue(default, default);
+                var imageFormat = imageFormatProperty != default ? (ImageFormat)imageFormatProperty.GetValue(default, default) : ImageFormat.Bmp;
 
                 try
                 {
@@ -1733,7 +1733,6 @@ namespace Frasterizer.UI.Windows
             if (data == default) { return; }
 
             ImageDescriptionSaveFileDialog.FileName = GetFileNameTemplate();
-
 
             if (ImageDescriptionSaveFileDialog.ShowDialog(this) == DialogResult.OK)
             {
